@@ -1,0 +1,224 @@
+{\rtf1\ansi\ansicpg950\cocoartf2820
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 <!DOCTYPE html>\
+<html lang="zh-Hant">\
+<head>\
+    <meta charset="UTF-8">\
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">\
+    <title>ME-VTP: \uc0\u20013 \u26481 \u34395 \u25836 \u23566 \u35261 \u24179 \u21488  - \u25506 \u32034 \u21855 \u31243 </title>\
+    <style>\
+        /*\
+        * CSS \uc0\u27171 \u24335 \u21312  - \u39636 \u29694 \u35946 \u33775 \u12289 \u29694 \u20195 \u12289 \u31185 \u25216 \u24863 \u30340  Vibe\
+        * \uc0\u20027 \u33394 \u35519 \u65306 #000033 (\u28145 \u21320 \u22812 \u34253 /\u36817 \u40657 ), #FFD700 (\u39640 \u38597 \u37329 \u33394 )\
+        */\
+\
+        :root \{\
+            --primary-dark: #000033; /* \uc0\u28145 \u21320 \u22812 \u34253  */\
+            --accent-gold: #FFD700; /* \uc0\u39640 \u38597 \u37329 \u33394  */\
+            --text-light: #FFFFFF;\
+            --text-secondary: #AAAAAA;\
+            --max-width: 1200px;\
+        \}\
+\
+        /* \uc0\u22522 \u30990 \u35373 \u23450 \u33287 \u23383 \u39636  */\
+        body \{\
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;\
+            margin: 0;\
+            padding: 0;\
+            background-color: var(--primary-dark);\
+            color: var(--text-light);\
+            line-height: 1.6;\
+            overflow-x: hidden; /* \uc0\u38450 \u27490 \u38911 \u25033 \u24335 \u35373 \u35336 \u20013 \u20986 \u29694 \u27700 \u24179 \u25458 \u36600  */\
+        \}\
+\
+        /* \uc0\u27161 \u38988 \u21312  (Hero Section) \u27171 \u24335  */\
+        .hero \{\
+            /* \uc0\u20551 \u35037 \u36889 \u26159 \u19968 \u20491 \u34395 \u25836 \u26223 \u40670 \u30340 \u39640 \u28165 \u22294 \u65292 \u20351 \u29992 \u28145 \u33394 \u28472 \u23652 \u35206 \u33995 \u20197 \u31361 \u20986 \u25991 \u23383  */\
+            background: linear-gradient(rgba(0, 0, 0, 0.7), var(--primary-dark)), \
+                        url('https://picsum.photos/seed/middleeast/1920/1080') no-repeat center center/cover;\
+            height: 100vh; /* \uc0\u20308 \u28415 \u25972 \u20491 \u35222 \u31383 \u39640 \u24230  */\
+            display: flex;\
+            flex-direction: column;\
+            justify-content: center;\
+            align-items: center;\
+            text-align: center;\
+            padding: 20px;\
+        \}\
+\
+        .hero-title \{\
+            font-size: 3.5em;\
+            color: var(--accent-gold);\
+            text-transform: uppercase;\
+            letter-spacing: 5px;\
+            margin-bottom: 0.5em;\
+            text-shadow: 0 0 10px rgba(255, 215, 0, 0.5); /* \uc0\u22686 \u21152 \u31185 \u25216 \u24863 \u30332 \u20809 \u25928 \u26524  */\
+        \}\
+\
+        .hero-subtitle \{\
+            font-size: 1.2em;\
+            color: var(--text-light);\
+            max-width: 600px;\
+            margin-bottom: 2em;\
+        \}\
+\
+        /* \uc0\u25353 \u37397 \u27171 \u24335  (CTA) */\
+        .cta-button \{\
+            display: inline-block;\
+            padding: 15px 35px;\
+            font-size: 1.1em;\
+            font-weight: bold;\
+            color: var(--primary-dark); /* \uc0\u28145 \u33394 \u25991 \u23383  */\
+            background-color: var(--accent-gold); /* \uc0\u37329 \u33394 \u32972 \u26223  */\
+            border: none;\
+            border-radius: 5px;\
+            text-decoration: none;\
+            transition: background-color 0.3s, transform 0.3s;\
+            box-shadow: 0 5px 15px rgba(255, 215, 0, 0.4); /* \uc0\u35946 \u33775 \u24863 \u38512 \u24433  */\
+        \}\
+\
+        .cta-button:hover \{\
+            background-color: #FFC700; /* \uc0\u30053 \u24494 \u35722 \u28154 \u30340 \u37329 \u33394  */\
+            transform: translateY(-3px); /* \uc0\u25080 \u20572 \u26178 \u36629 \u24494 \u19978 \u28014  */\
+        \}\
+\
+        /* \uc0\u21151 \u33021 \u21345 \u29255 \u21312 \u27171 \u24335  */\
+        .features-section \{\
+            padding: 60px 20px;\
+            text-align: center;\
+            max-width: var(--max-width);\
+            margin: 0 auto;\
+        \}\
+\
+        .features-title \{\
+            font-size: 2em;\
+            color: var(--accent-gold);\
+            margin-bottom: 40px;\
+            text-transform: uppercase;\
+        \}\
+\
+        .card-container \{\
+            display: flex;\
+            gap: 30px; /* \uc0\u21345 \u29255 \u38291 \u36317  */\
+            justify-content: center;\
+            flex-wrap: wrap; /* \uc0\u38911 \u25033 \u24335 \u65306 \u30070 \u31354 \u38291 \u19981 \u36275 \u26178 \u25563 \u34892  */\
+        \}\
+\
+        .feature-card \{\
+            background-color: #1a1a40; /* \uc0\u27604 \u32972 \u26223 \u30053 \u28154 \u30340 \u31185 \u25216 \u34253  */\
+            padding: 30px;\
+            border-radius: 10px;\
+            flex: 1; /* \uc0\u20308 \u25818 \u31561 \u23532 \u31354 \u38291  */\
+            min-width: 280px; /* \uc0\u30906 \u20445 \u22312 \u23567 \u34722 \u24149 \u19978 \u19981 \u26371 \u22826 \u31364  */\
+            max-width: 350px;\
+            text-align: left;\
+            border-top: 3px solid var(--accent-gold); /* \uc0\u38914 \u37096 \u37329 \u33394 \u35037 \u39166 \u32218  */\
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);\
+            transition: transform 0.3s;\
+        \}\
+\
+        .feature-card:hover \{\
+            transform: translateY(-5px); /* \uc0\u25080 \u20572 \u26178 \u36629 \u24494 \u19978 \u28014  */\
+        \}\
+\
+        .card-icon \{\
+            font-size: 2em;\
+            color: var(--accent-gold);\
+            margin-bottom: 15px;\
+        \}\
+\
+        .card-title \{\
+            font-size: 1.3em;\
+            margin-top: 0;\
+            margin-bottom: 10px;\
+            color: var(--text-light);\
+        \}\
+\
+        .card-description \{\
+            color: var(--text-secondary);\
+        \}\
+\
+        /* \uc0\u33139 \u35387 /\u29256 \u27402 \u21312  */\
+        .footer \{\
+            text-align: center;\
+            padding: 20px;\
+            border-top: 1px solid #1a1a40;\
+            color: var(--text-secondary);\
+            font-size: 0.8em;\
+        \}\
+\
+        /* \uc0\u23186 \u39636 \u26597 \u35426 \u65306 \u30906 \u20445 \u25163 \u27231 \u23436 \u32654 \u39023 \u31034  (\u38911 \u25033 \u24335 \u35373 \u35336 ) */\
+        @media (max-width: 768px) \{\
+            .hero \{\
+                height: 70vh; /* \uc0\u25163 \u27231 \u19978 \u30053 \u24494 \u32302 \u23567 \u27161 \u38988 \u21312 \u39640 \u24230  */\
+            \}\
+\
+            .hero-title \{\
+                font-size: 2.5em; /* \uc0\u32302 \u23567 \u25163 \u27231 \u19978 \u30340 \u27161 \u38988 \u23383 \u39636  */\
+            \}\
+\
+            .card-container \{\
+                flex-direction: column; /* \uc0\u25163 \u27231 \u19978 \u21345 \u29255 \u22402 \u30452 \u22534 \u30090  */\
+                gap: 20px;\
+            \}\
+\
+            .feature-card \{\
+                max-width: 90%; /* \uc0\u21345 \u29255 \u20308 \u25818 \u22823 \u37096 \u20998 \u23532 \u24230  */\
+                margin: 0 auto;\
+            \}\
+            \
+            .cta-button \{\
+                padding: 12px 25px; /* \uc0\u32302 \u23567 \u25163 \u27231 \u19978 \u30340 \u25353 \u37397 \u23610 \u23544  */\
+                font-size: 1em;\
+            \}\
+        \}\
+    </style>\
+</head>\
+<body>\
+\
+    <header class="hero">\
+        <h1 class="hero-title">\uc0\u25506 \u32034 \u20013 \u26481 \u65292 \u21363 \u21051 \u21855 \u31243 \u12290 </h1>\
+        <p class="hero-subtitle">MiddleEast Virtual Tour Platform (ME-VTP)\uc0\u65306 \u20197 \u21069 \u25152 \u26410 \u26377 \u30340  AR/VR \u27785 \u28024 \u24335 \u39636 \u39511 \u65292 \u35299 \u37782 \u20013 \u26481 \u30340 \u31070 \u31192 \u33287 \u22767 \u40599 \u12290 </p>\
+        <a href="#buy-now" class="cta-button">\uc0\u31435 \u21363 \u36984 \u25799 \u24744 \u30340 \u34892 \u31243 \u20006 \u36092 \u31080 </a>\
+    </header>\
+\
+    <section class="features-section">\
+        <h2 class="features-title">\uc0\u28858 \u20160 \u40636 \u36984 \u25799  ME-VTP\u65311 </h2>\
+        <div class="card-container">\
+            \
+            <div class="feature-card">\
+                <div class="card-icon">\uc0\u55357 \u56960 </div> \
+                <h3 class="card-title">AR/VR \uc0\u27785 \u28024 \u24335 \u39636 \u39511 </h3>\
+                <p class="card-description">\uc0\u21033 \u29992 \u38914 \u23574 \u30340  AR/VR \u25216 \u34899 \u65292 \u35731 \u24744 \u22914 \u35242 \u33256 \u26460 \u25308 \u22612 \u38914 \u25110 \u40613 \u21152 \u22823 \u28165 \u30495 \u23546 \u12290 \u39636 \u39511 \u28145 \u24230 \u23566 \u35261 \u65292 \u32048 \u31680 \u28961 \u36986 \u12290 </p>\
+            </div>\
+\
+            <div class="feature-card">\
+                <div class="card-icon">\uc0\u55357 \u56517 </div>\
+                <h3 class="card-title">\uc0\u26234 \u24935 \u34892 \u31243 \u25490 \u31243 \u25512 \u34214 </h3>\
+                <p class="card-description">\uc0\u36664 \u20837 \u24744 \u24050 \u25490 \u23450 \u30340 \u34892 \u31243 \u65292 \u31995 \u32113 \u23559 \u21363 \u26178 \u25512 \u34214 \u26368 \u36969 \u21512 \u24744 \u30340 \u34395 \u25836 \u26223 \u40670 \u65292 \u35731 \u24744 \u30340 \u35215 \u21123 \u33287 \u25506 \u32034 \u23436 \u32654 \u32080 \u21512 \u12290 </p>\
+            </div>\
+\
+            <div class="feature-card">\
+                <div class="card-icon">\uc0\u55357 \u56499 </div>\
+                <h3 class="card-title">\uc0\u23433 \u20840 \u20415 \u25463 \u28961 \u24962 \u36092 \u31080 </h3>\
+                <p class="card-description">\uc0\u19968 \u31449 \u24335 \u32218 \u19978 \u36092 \u31080 \u33287 \u25903 \u20184 \u31995 \u32113 \u65292 \u25903 \u25588 \u22810 \u31278 \u25903 \u20184 \u26041 \u24335 \u12290 \u24555 \u36895 \u12289 \u23433 \u20840 \u65292 \u35731 \u24744 \u38646 \u38556 \u31001 \u36914 \u20837 \u34395 \u25836 \u19990 \u30028 \u12290 </p>\
+            </div>\
+\
+        </div>\
+    </section>\
+\
+    <section id="buy-now" class="features-section" style="padding-top: 20px;">\
+        <p class="hero-subtitle" style="margin-bottom: 30px;">\uc0\u24478 \u20659 \u32113 \u22855 \u35264 \u21040 \u26410 \u20358 \u24314 \u31689 \u65292 \u24744 \u30340 \u20013 \u26481 \u20043 \u26053 \u65292 \u24478 \u27492 \u34389 \u38283 \u22987 \u12290 </p>\
+        <a href="#" class="cta-button" style="font-size: 1.4em;">\uc0\u31435 \u21363 \u36984 \u25799 \u24744 \u30340 \u34892 \u31243 \u20006 \u36092 \u31080 </a>\
+    </section>\
+\
+    <footer class="footer">\
+        \'a9 2025 MiddleEast Virtual Tour Platform (ME-VTP). \uc0\u39636 \u39511  Vibe Coding \u25104 \u26524 \u12290 \
+    </footer>\
+\
+</body>\
+</html>}
